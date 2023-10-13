@@ -1,0 +1,61 @@
+/* Styles pour l'en-tête */
+header {
+  display: flex;  /* Affichage en mode flex */
+  justify-content: space-between;  /* Espace entre les éléments */
+  align-items: center;  /* Alignement vertical au centre */
+  padding: 20px;  /* Espacement intérieur */
+  background-color: #ffffff;  /* Couleur de fond */
+  border-bottom: 1px solid #e0e0e0;  /* Bordure en bas */
+}
+
+/* Styles pour le logo */
+.logo img {
+  max-height: 40px;  /* Hauteur maximale de l'image du logo */
+}
+
+/* Styles pour la navigation */
+nav ul {
+  list-style-type: none;  /* Désactive les puces de liste */
+  margin: 0;  /* Aucune marge extérieure */
+  padding: 0;  /* Aucune marge intérieure */
+}
+
+nav li {
+  width: 100%;  /* Largeur de 100% */
+  margin-right: 20px;  /* Marge à droite */
+}
+
+nav li a {
+  text-decoration: none;  /* Pas de soulignement du texte */
+  color: #333333;  /* Couleur du texte */
+  font-weight: bold;  /* Graisse du texte */
+}
+
+/* Styles pour les actions de l'utilisateur */
+.user-actions button {
+  margin-left: 10px;  /* Marge à gauche */
+}
+
+/* Styles pour le bouton cercle */
+.search-circle {
+  position: relative;  /* Position relative pour les pseudo-éléments */
+  display: inline-flex;  /* Affichage en ligne avec flexbox */
+  align-items: center;  /* Aligner les éléments verticalement */
+  border: 2px solid #ccc;  /* Bordure du cercle */
+  border-radius: 20px;  /* Bordures arrondies */
+  padding: 5px 15px;  /* Espace autour du cercle */
+  text-align: center;  /* Centrer le texte */
+  width: 600px;  /* Largeur du cercle */
+}
+
+/* Styles pour le texte dans le cercle */
+.circle-text {
+  font-size: 14px;  /* Taille de police */
+  margin-right: 10px;  /* Espacement entre le texte et l'icône */
+}
+
+/* Styles pour l'icône de recherche */
+.search-icon img {
+  width: 20px;  /* Largeur de l'image de recherche */
+  height: 20px;  /* Hauteur de l'image de recherche */
+}

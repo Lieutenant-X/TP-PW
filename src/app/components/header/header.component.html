@@ -1,0 +1,32 @@
+<!-- Balise d'en-tête -->
+<header>
+  <!-- Partie logo -->
+  <div class="logo">
+    <img src="../../assets/images/logo accueil.png" alt="Airbnb Logo" />
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <!-- Élément de navigation pour la recherche -->
+      <li class="search-circle">
+        <!-- Champ de recherche -->
+        <input placeholder="N'importe où Une semaine Ajouter des voyageurs" class="circle-text" (click)="ouvrirFenetreRecherche()">
+        
+        <!-- Icône de recherche -->
+        <span class="search-icon">
+          <img src="../../assets/images/logo recherche.png" alt="search-icon" />
+        </span>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Actions de l'utilisateur -->
+  <div class="user-actions">
+    <!-- Bouton "Se connecter" -->
+    <button (click)="onLogin()">Se connecter</button>
+    
+    <!-- Bouton "S'inscrire" -->
+    <button (click)="onSignUp()">S'inscrire</button>
+  </div>
+</header>

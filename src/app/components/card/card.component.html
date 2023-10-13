@@ -1,0 +1,38 @@
+<!-- Conteneur de la carte de logement -->
+<div class="cardLogement">
+    <!-- Image de la carte -->
+    <div class="cardImage">
+      <!-- Liaison de la source de l'image avec la propriété imageString -->
+      <img [src]="imageString" alt="Image" />
+    </div>
+    
+    <!-- Contenu de la carte -->
+    <div class="cardContent">
+      <!-- Nom de la ville -->
+      <h4 class="city_name">{{ cardData.city_name }}, France</h4>
+      
+      <!-- Statut -->
+      <p class="status">Professionnel</p>
+      
+      <!-- Période -->
+      <p class="date">1-7 oct.</p>
+      
+      <!-- Prix -->
+      <p class="price">
+        <strong class="bold-price">{{ cardData.price }} €</strong> par nuit
+      </p>
+      
+      <!-- Contenu de notation -->
+      <div class="rating-content">
+        <!-- Image d'étoile -->
+        <img src="../../../assets/images/etoile.svg" alt="etoile" />
+        
+        <!-- Notation -->
+        <p class="rating">{{ cardData.rating }}</p>
+      </div>
+    </div>
+    
+
+    <!-- <h1>{{cardData.favourite}}</h1> -->
+  </div>
+  

@@ -1,0 +1,26 @@
+/* Styles pour la classe .mesLogements */
+.mesLogements {
+    display: flex;  /* Affichage en mode flex */
+    flex-wrap: wrap;  /* Permet le retour à la ligne des éléments en flex */
+    list-style: none;  /* Désactive les puces de liste */
+    margin: 0 auto;  /* Marge extérieure automatique */
+    padding: 0;  /* Aucune marge intérieure */
+    justify-content: center;  /* Centre le contenu horizontalement */
+  }
+  
+  /* Styles pour la classe .logement */
+  .logement {
+    display: flex;  /* Affichage en mode flex */
+    padding: 1rem;  /* Espacement intérieur */
+    width: 400px;  /* Largeur fixe */
+    
+    /* Styles pour les écrans de petite taille (<650px) */
+    @media (max-width: 650px) {
+      width: 50%;  /* Largeur de 50% en dessous de 650px */
+    }
+  
+    height: 450px;  /* Hauteur fixe */
+    min-width: 300px;  /* Largeur minimale */
+    max-width: 500px;  /* Largeur maximale */
+  }
+  

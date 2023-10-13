@@ -1,0 +1,132 @@
+/* Styles pour la carte de logement */
+.cardLogement {
+    background-color: white;  /* Couleur de fond */
+    height: 100%;  /* Hauteur de 100% */
+    border-radius: 0.25rem;  /* Bordures arrondies */
+    display: flex;  /* Affichage en mode flex */
+    flex-direction: column;  /* Direction de flex en colonne */
+    overflow: hidden;  /* Masquer le dépassement de contenu */
+    position: relative;  /* Position relative pour les éléments enfants */
+    
+    /* Au survol, ajuster le filtre de contraste de l'image */
+    &:hover {
+      .card__image {
+        filter: contrast(100%);
+      }
+    }
+  }
+  
+  /* Style pour l'icône "cœur" lorsqu'il est aimé */
+  .liked {
+    fill: red !important;  /* Couleur de remplissage en rouge */
+  }
+  
+  /* Style pour l'image du "cœur" */
+  .image-coeur {
+    position: absolute;  /* Position absolue */
+    width: 25px;  /* Largeur */
+    right: 20px;  /* Positionnement à droite */
+    top: 10px;  /* Positionnement en haut */
+    opacity: 1;  /* Opacité */
+    
+    /* Style pour le SVG de l'icône "cœur" */
+    svg {
+      display: block;
+      stroke: #fff;
+      fill: black;
+      stroke-width: 2px;
+      overflow: visible;
+    }
+    
+    /* Effet au clic */
+    img:active {  
+      transform: scale(0.7);
+      transition: transform 0.1s ease-in-out;
+    }
+    
+    fill: red !important;  /* Couleur de remplissage en rouge */
+    transition: fill 0.1s ease-in-out;  /* Transition de la couleur de remplissage */
+  }
+  
+  /* Styles pour l'image de la carte */
+  .cardImage {
+    height: 100%;  /* Hauteur de 100% */
+    border-radius: 20px;  /* Bordures arrondies */
+    overflow: hidden;  /* Masquer le dépassement de contenu */
+    
+    /* Style pour l'image à l'intérieur de la carte */
+    img {
+      height: 100%;
+      width: 100%;
+      vertical-align: middle;
+      object-fit: cover;
+    }
+  }
+  
+  /* Styles pour le contenu de la carte */
+  .cardContent {
+    position: relative;  /* Position relative */
+    display: flex;  /* Affichage en mode flex */
+    flex: 1 1 auto;  /* Propriétés flexibles pour le contenu */
+    flex-direction: column;  /* Direction de flex en colonne */
+  }
+  
+  /* Styles pour le nom de la ville */
+  .city_name {
+    color: #000000;  /* Couleur du texte */
+    font-size: 1rem;  /* Taille de police */
+    margin: 0;  /* Aucune marge */
+    padding-top: 10px;  /* Espacement en haut */
+    font-weight: 500;  /* Graisse du texte */
+  }
+  
+  /* Styles pour le prix */
+  .price {
+    margin: 0px;  /* Aucune marge */
+    padding-top: 10px;  /* Espacement en haut */
+    flex: 1 1 auto;  /* Propriétés flexibles pour le prix */
+    font-size: 1rem;  /* Taille de police */
+    line-height: 1.5;  /* Hauteur de ligne */
+    margin-bottom: 1.25rem;  /* Marge en bas */
+    color: rgb(36, 35, 35);  /* Couleur du texte */
+    
+    /* Style pour une partie du texte du prix */
+    .bold-price {
+      color: #000000;  /* Couleur du texte en gras */
+    }
+  }
+  
+  /* Styles pour le contenu de notation */
+  .rating-content {
+    width: 45px;  /* Largeur de 45px */
+    position: absolute;  /* Position absolue */
+    align-items: baseline;  /* Alignement à la base */
+    right: 0px;  /* Positionnement à droite */
+    top: 10px;  /* Positionnement en haut */
+    display: flex;  /* Affichage en mode flex */
+    flex-direction: row;  /* Direction de flex en ligne */
+    
+    /* Style pour l'image de notation */
+    img {
+      max-width: 15px;  /* Largeur maximale */
+      padding-right: 5px;  /* Espacement à droite */
+    }
+  }
+  
+  /* Styles pour la notation */
+  .rating {
+    margin: 0px;  /* Aucune marge */
+  }
+  
+  /* Styles pour le statut */
+  .status {
+    margin: 0px;  /* Aucune marge */
+    color: gray;  /* Couleur du texte grise */
+  }
+  
+  /* Styles pour la date */
+  .date {
+    margin: 0px;  /* Aucune marge */
+    color: gray;  /* Couleur du texte grise */
+  }
+  
